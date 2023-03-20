@@ -1,38 +1,70 @@
-.App {
+#background {
+  object-fit: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+  position: relative;
+}
+
+#quote-box {
+  background-color: rgba(255, 255, 255, 0.89);
+
+  font-family: playfair;
+  max-width: 40vw;
+  margin: auto;
+  padding: 2rem;
+  position: absolute;
+  right: 50%;
+  bottom: 50%;
+  transform: translate(50%, 50%);
+  border-radius: 4px;
+}
+
+#text {
   text-align: center;
+  margin: auto;
+  font-size: 1.6rem;
+  padding: 1rem;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+#author {
+  text-align: center;
+  font-size: 1.4rem;
+  margin-bottom: 1.4rem;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.bottom-container {
   display: flex;
-  flex-direction: column;
+  justify-content: space-between;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+}
+
+button {
+  border: none;
+  background-color: green;
   color: white;
+  text-align: center;
+  font-size: 1rem;
+  padding: 0.8rem;
+  font-family: inherit;
+  border-radius: 4px;
 }
 
-.App-link {
-  color: #61dafb;
+button:hover {
+  cursor: pointer;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.ph-twitter-logo {
+  color: white;
+
+  background-color: green;
+  font-size: 1rem;
+  padding: 0.8rem;
+  border-radius: 4px;
+}
+
+a {
+  text-decoration: none;
 }
